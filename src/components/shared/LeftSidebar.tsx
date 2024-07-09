@@ -11,7 +11,6 @@ const LeftSidebar = () => {
   const { mutate: signOut, isSuccess } = useSignOutAccount();
   const navigate = useNavigate();
   const { user } = useUserContext();
-  console.log(user);
 
   useEffect(() => {
     if (isSuccess) navigate(0);
@@ -49,6 +48,7 @@ const LeftSidebar = () => {
                 className={`leftsidebar-link group ${
                   isActive && "bg-primary-500"
                 }`}
+                key={link.label}
               >
                 <NavLink
                   to={link.route}

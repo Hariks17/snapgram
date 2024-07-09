@@ -75,7 +75,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     ) {
       navigate("/sign-in");
     }
-  });
+
+    checkAuthUser();
+  }, []);
 
   const value = {
     user,
