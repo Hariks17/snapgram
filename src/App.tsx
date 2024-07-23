@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 
 import "./globals.css";
 import SignInForm from "./_auth/forms/SignInForm";
-import { Home } from "./_root/pages";
 import SignUpForm from "./_auth/forms/SignUpForm";
 import AuthLayout from "./_auth/AuthLayout";
 import RootLayout from "./_root/RootLayout";
@@ -15,6 +14,7 @@ import EditPost from "./_root/pages/EditPost";
 import PostDetails from "./_root/pages/PostDetails";
 import Profile from "./_root/pages/Profile";
 import UpdateProfile from "./_root/pages/UpdateProfile";
+import Home from "./_root/pages/Home";
 const App = () => {
   return (
     <>
