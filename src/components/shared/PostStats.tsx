@@ -25,8 +25,6 @@ const PostStats = ({ post, userId }: PostStatsProps) => {
 
   const { data: currentUser } = useGetCurrentUser();
 
-  console.log("Post", post);
-  console.log("Current User", currentUser);
   const savedPost = currentUser?.save.find(
     (record: Models.Document) => record.post.$id === post.$id
   );
